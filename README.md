@@ -8,4 +8,5 @@ See:
 * [Cloud Functions Slack sample source code][code]
 
 [tutorial]: https://cloud.google.com/functions/docs/tutorials/slack
+[doc]: https://cloud.google.com/functions/docs/writing
 [code]: main.py
