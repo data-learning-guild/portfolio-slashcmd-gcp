@@ -19,14 +19,6 @@ import googleapiclient.discovery
 from slack.signature import SignatureVerifier
 
 
-# kgsearch = googleapiclient.discovery.build(
-#     'kgsearch',
-#     'v1',
-#     developerKey=os.environ['KG_API_KEY'],
-#     cache_discovery=False)
-# [END functions_slack_setup]
-
-
 # [START functions_verify_webhook]
 def verify_signature(request):
     request.get_data()  # Decodes received requests into request.data
@@ -44,8 +36,7 @@ def user_search(request):
         return 'Only POST requests are accepted', 405
 
     verify_signature(request)
-    print(request.form['text'])
-    return 'hello world'
+    return 'Posted Param: {}'.format(request.form['text'])
     # user_search_response = make_search_request(request.form['text'])
     # return jsonify(user_search_response)
 # [END functions_slack_search]
