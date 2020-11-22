@@ -45,10 +45,10 @@ def send_message(response_url, api_response):
     recommended_users = api_response['recommended_users']
     recommended_users_str = ""
     for ru in recommended_users:
-        recommended_users_str += '> {0}(<@{1}>)\t{2}\n'.format(ru['name'], ru['uuid'], ru['score'])
+        recommended_users_str += '> {0}(<@{1}>)\t{2}\n'.format(ru['name'], ru['user_id'], ru['score'])
     
     kw = api_response['kw']
-    msg_str_markdown = " *{}* に興味のあるユーザー一覧\n".format(kw)
+    msg_str_markdown = " *{}* に関連度の高いユーザー一覧\n".format(kw)
     msg_str_markdown += recommended_users_str
 
     message = {
