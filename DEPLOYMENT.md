@@ -1,10 +1,6 @@
 # How to deploy
 
-See:
-
-- [gcloud functions deploy | Google Cloud SDK Reference](https://cloud.google.com/sdk/gcloud/reference/functions/deploy)
-- [Cloud Functions Deploying | Google Cloud Guide](https://cloud.google.com/functions/docs/deploying)
-- [Cloud Functions Testing | Google Cloud Guide](https://cloud.google.com/functions/docs/testing/test-overview)
+---
 
 ## gcloud によるデプロイ基本事項
 
@@ -39,3 +35,13 @@ gcloud functions deploy user_search_response \
 --set-env-vars "SLACK_SECRET=[YOUR_SLACK_SIGNING_SECRET]" \
 --project [PROJECT_ID]
 ```
+
+---
+
+## References
+
+See:
+
+- [gcloud functions deploy | Google Cloud SDK Reference](https://cloud.google.com/sdk/gcloud/reference/functions/deploy)
+- [Cloud Functions Deploying | Google Cloud Guide](https://cloud.google.com/functions/docs/deploying)
+- [Cloud Functions Testing | Google Cloud Guide](https://cloud.google.com/functions/docs/testing/test-overview)
