@@ -2,23 +2,6 @@
 
 # User Search Slash Command with 2 Google Cloud Functions
 
-See:
-
-* [Cloud Functions Slack tutorial][tutorial]
-* [Cloud Functions Slack sample source code][code]
-* [Slack Timeout Problem 解説記事 | Dev.to][article]
-* [Slack Timeout Problem 解説記事のソース | GitHub][refcode]
-* [Slack Message Formatting | Slack API Reference][slackmsgdoc]
-* [Slack Block Kit Message Formatting Simulator][slackmsgsim]
-
-[tutorial]: https://cloud.google.com/functions/docs/tutorials/slack
-[doc]: https://cloud.google.com/functions/docs/writing
-[code]: main.py
-[article]: https://dev.to/googlecloud/getting-around-api-timeouts-with-cloud-functions-and-cloud-pub-sub-47o3
-[refcode]: https://github.com/abbycar/doge-a-chat
-[slackmsgdoc]: https://api.slack.com/reference/surfaces/formatting
-[slackmsgsim]: https://app.slack.com/block-kit-builder
-
 ---
 
 ## Cloud Functions Spec ~ `search_queue`
@@ -64,3 +47,24 @@ Working on it! :dog2:
 
 - Cloud Functions Dashboard.
 - And then, See Logs.
+
+---
+
+## References
+
+See:
+
+* [Cloud Functions Slack tutorial][tutorial]
+* [Cloud Functions Slack sample source code][code]
+* [Slack Timeout Problem 解説記事 | Dev.to][article]
+* [Slack Timeout Problem 解説記事のソース | GitHub][refcode]
+* [Slack Message Formatting | Slack API Reference][slackmsgdoc]
+* [Slack Block Kit Message Formatting Simulator][slackmsgsim]
+
+[tutorial]: https://cloud.google.com/functions/docs/tutorials/slack
+[doc]: https://cloud.google.com/functions/docs/writing
+[code]: main.py
+[article]: https://dev.to/googlecloud/getting-around-api-timeouts-with-cloud-functions-and-cloud-pub-sub-47o3
+[refcode]: https://github.com/abbycar/doge-a-chat
+[slackmsgdoc]: https://api.slack.com/reference/surfaces/formatting
+[slackmsgsim]: https://app.slack.com/block-kit-builder
